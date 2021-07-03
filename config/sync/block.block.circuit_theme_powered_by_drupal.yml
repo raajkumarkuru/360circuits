@@ -1,0 +1,22 @@
+uuid: 7d5d81c1-49da-49cc-ac3d-1f325b1f34b8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - circuit_theme
+_core:
+  default_config_hash: 2_xxaOb8b_0AUgYFdJLxIBDDwufyh6YozhGfBd97p38
+id: circuit_theme_powered_by_drupal
+theme: circuit_theme
+region: footer
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

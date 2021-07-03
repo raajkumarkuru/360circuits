@@ -1,0 +1,22 @@
+uuid: 9fc98833-57cf-4682-a8a3-894b5b673f51
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - circuit_theme
+_core:
+  default_config_hash: S0Y16qIQfKiOEzWlddOGk3u_BKwAruAheA8VVFfGbLc
+id: circuit_theme_help
+theme: circuit_theme
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: eb0a5d3b-42c3-4b2d-a4c3-c289d5a74032
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - circuit_theme
+_core:
+  default_config_hash: VShtwe72J2j41BJzApoNbs8l554EpngM5RTObxM7yiw
+id: circuit_theme_breadcrumbs
+theme: circuit_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

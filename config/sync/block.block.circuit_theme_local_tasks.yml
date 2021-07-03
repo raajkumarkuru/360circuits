@@ -1,0 +1,22 @@
+uuid: 928f86f4-f595-42f8-bd96-d2e71dff6714
+langcode: en
+status: true
+dependencies:
+  theme:
+    - circuit_theme
+_core:
+  default_config_hash: yX9o6NcntZnXRDfbJoHY1pJwuXlumW44m5AMs347NN4
+id: circuit_theme_local_tasks
+theme: circuit_theme
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

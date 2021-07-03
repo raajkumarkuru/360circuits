@@ -1,0 +1,22 @@
+uuid: 900f4726-ee08-42be-ac85-f132017ddf09
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - circuit_theme
+_core:
+  default_config_hash: 9LdMj38y4GDi23GrIUtIZIV1bJEn1C47N19jrswvcLc
+id: circuit_theme_messages
+theme: circuit_theme
+region: content
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  provider: system
+  label_display: '0'
+visibility: {  }

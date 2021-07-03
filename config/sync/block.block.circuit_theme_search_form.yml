@@ -1,0 +1,23 @@
+uuid: 4f592ae6-3406-47c1-b6d6-44929ea9aeff
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - circuit_theme
+_core:
+  default_config_hash: HZJ8894mYbX0pdeltUdfnQjONb-BnkflWDqEm_x13m4
+id: circuit_theme_search_form
+theme: circuit_theme
+region: nav_additional
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+  page_id: ''
+visibility: {  }

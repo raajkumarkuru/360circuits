@@ -1,0 +1,20 @@
+uuid: beacb04e-7f0b-4c90-b616-3dcb3fea35c5
+langcode: en
+status: true
+dependencies:
+  theme:
+    - circuit_theme
+_core:
+  default_config_hash: qYppfxaWSy6BwGNKdMch1PeUA24PlRTt39jQft6A6Kg
+id: circuit_theme_page_title
+theme: circuit_theme
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }
