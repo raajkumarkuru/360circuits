@@ -4,3 +4,13 @@
  * @file
  * Circuit Theme theme file.
  */
+
+/**
+* Implements hook_preprocess_menu().
+*/
+function circuit_theme_preprocess_field__paragraph__clients(&$variables) {
+  /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
+  $paragraph = $variables['paragraph'];
+  
+  $variables['#attached']['library'][] =  'slick/slick';
+}

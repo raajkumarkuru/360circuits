@@ -13,7 +13,40 @@
 //$breadcrumb-divider-color: $gray-700 !default;
 //$breadcrumb-active-color: $gray-700 !default;
 
+$navbar-light-color: #FFF !default;
+//$navbar-dark-color: rgba($white, .6) !default;
+
+//$form-text-margin-top: 0 !default;
+// Bootstrap variables (overrides).
+
+// override default bootstrap colors for accessibility
+//$white: #fff !default;
+//$black: #000 !default;
+//$gray-700: #495057 !default;
+
+//$blue: #0056b3 !default;
+//$cyan: #006170 !default;
+//$pink: #e21181 !default;
+//$green: #008a00 !default;
+$dark: #0c1417 !default;
+
+//$breadcrumb-divider-color: $gray-700 !default;
+//$breadcrumb-active-color: $gray-700 !default;
+
 //$navbar-light-color: rgba($black, .6) !default;
 //$navbar-dark-color: rgba($white, .6) !default;
 
 //$form-text-margin-top: 0 !default;
+
+$nav-link-color: #FFF;
+$nav-link-hover-color: #FFF;
+
+$link-decoration: underline !default;
+$link-hover-decoration: underline !default;
+
+$a-link-decoration: underline !default;
+$a-link-hover-decoration: underline !default;
+
+$font-size-base: 1.12rem !default;
+
+$footer-padding: 1rem !default;

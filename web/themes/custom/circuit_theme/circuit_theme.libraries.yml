@@ -2,3 +2,6 @@ global-styling:
   css:
     theme:
       css/style.css: {}
+  js:
+    js/jquery.marquee.min.js: {}
+    js/main.js: {}

@@ -1,0 +1,6 @@
+name: Circuit Base Module
+type: module
+description: 'Circuit Base Module'
+core: 8.x
+dependencies:
+  - field

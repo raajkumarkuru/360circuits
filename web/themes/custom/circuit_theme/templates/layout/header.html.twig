@@ -1,0 +1,15 @@
+<header class="header">
+{% if page.nav_branding or page.nav_main %}
+
+{{ page.nav_branding }}
+
+<button class="toggle-menu"><div class="line line-1"></div><div class="line line-2"></div><div class="line line-3"></div></button>
+
+<div class="menu-drawer"">
+<button class="close-menu">
+<div class="line line-1"></div>
+<div class="line line-2"></div></button>
+{{ page.nav_main }}
+</div></header>
+{% endif %}
+</header>
