@@ -1,0 +1,12 @@
+uuid: abd4e954-9239-41bf-aa7c-8fa63db50f52
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: AoxO8NhinvCbBSpeytRNzDiBnx6uUNef6hydiYEB0sw
+id: tabs_vertical
+label: 'Vertical Tabs'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

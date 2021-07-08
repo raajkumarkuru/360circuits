@@ -1,0 +1,34 @@
+uuid: 99678a67-087c-4ae0-a4ab-0e95a9855521
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.footer.field_image
+    - image.style.thumbnail
+    - system.menu.footer
+  module:
+    - image
+    - link
+id: menu_link_content.footer.default
+targetEntityType: menu_link_content
+bundle: footer
+mode: default
+content:
+  field_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  view_mode: true

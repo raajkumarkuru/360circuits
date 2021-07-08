@@ -1,0 +1,10 @@
+uuid: f3541d91-1bb9-43e9-a717-09077a214a03
+langcode: en
+status: true
+dependencies:
+  module:
+    - owlcarousel2
+id: owlcarousel2.token
+label: Token
+targetEntityType: owlcarousel2
+cache: true

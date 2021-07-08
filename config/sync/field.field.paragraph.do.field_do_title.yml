@@ -1,0 +1,21 @@
+uuid: 57447d18-c49e-4c7c-94a7-40daad0aad06
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_do_title
+    - paragraphs.paragraphs_type.do
+  module:
+    - text
+id: paragraph.do.field_do_title
+field_name: field_do_title
+entity_type: paragraph
+bundle: do
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

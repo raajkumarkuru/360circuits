@@ -1,0 +1,26 @@
+uuid: 2d3f63b3-4a6d-4c78-8f0b-aca9a4877435
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_banner
+    - paragraphs.paragraphs_type.banner
+  module:
+    - video
+id: paragraph.banner.field_banner
+field_name: field_banner
+entity_type: paragraph
+bundle: banner
+label: Banner
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: ''
+  file_directory: 'videos/[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: video

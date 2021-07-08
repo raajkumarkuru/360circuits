@@ -1,0 +1,21 @@
+uuid: a1de8ff3-dff0-4a96-ae76-05917451cd85
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_desc
+    - paragraphs.paragraphs_type.why_us
+  module:
+    - text
+id: paragraph.why_us.field_desc
+field_name: field_desc
+entity_type: paragraph
+bundle: why_us
+label: Desc
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

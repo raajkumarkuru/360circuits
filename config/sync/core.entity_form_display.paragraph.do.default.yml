@@ -1,0 +1,45 @@
+uuid: 2268aaec-52d7-4782-abcf-516038e22b4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.do.field_desc
+    - field.field.paragraph.do.field_do_title
+    - field.field.paragraph.do.field_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.do
+  module:
+    - image
+    - text
+id: paragraph.do.default
+targetEntityType: paragraph
+bundle: do
+mode: default
+content:
+  field_desc:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_do_title:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true

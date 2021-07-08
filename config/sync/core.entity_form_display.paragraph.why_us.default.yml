@@ -1,0 +1,36 @@
+uuid: 8aa4ad5e-27c4-469e-9887-e3a418c3960e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.why_us.field_background_image
+    - field.field.paragraph.why_us.field_desc
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.why_us
+  module:
+    - image
+    - text
+id: paragraph.why_us.default
+targetEntityType: paragraph
+bundle: why_us
+mode: default
+content:
+  field_background_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_desc:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

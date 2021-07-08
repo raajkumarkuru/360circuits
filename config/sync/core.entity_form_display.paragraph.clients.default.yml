@@ -1,0 +1,26 @@
+uuid: 6db5ec19-2b2f-4b58-90cb-c957d28d1c31
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.clients.field_logo
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.clients
+  module:
+    - image
+id: paragraph.clients.default
+targetEntityType: paragraph
+bundle: clients
+mode: default
+content:
+  field_logo:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true

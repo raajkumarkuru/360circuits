@@ -1,0 +1,12 @@
+uuid: 75cee76b-2168-4ef7-baf1-62294869e412
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Aq08HtycmTKPayNJwURTKL_ewngqOVTaaC3v76Gr1K4
+id: tabs_horizontal
+label: 'Horizontal Tabs'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

@@ -1,0 +1,38 @@
+uuid: 83d932c8-056e-4cf8-88f4-a62bc8ba2880
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_us.field_desc
+    - field.field.paragraph.about_us.field_vid
+    - paragraphs.paragraphs_type.about_us
+  module:
+    - text
+    - video
+id: paragraph.about_us.default
+targetEntityType: paragraph
+bundle: about_us
+mode: default
+content:
+  field_desc:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_vid:
+    weight: 2
+    settings:
+      file_directory: 'video-thumbnails/[date:custom:Y]-[date:custom:m]'
+      uri_scheme: public
+      file_extensions: 'mp4 ogv webm'
+      max_filesize: ''
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: video_upload
+    region: content
+hidden:
+  created: true
+  status: true

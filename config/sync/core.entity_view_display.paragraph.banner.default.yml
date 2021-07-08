@@ -1,0 +1,78 @@
+uuid: 3a8df978-3d54-4b2c-aa2a-a5f19664a0dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.banner.field_banner
+    - field.field.paragraph.banner.field_banner_text
+    - paragraphs.paragraphs_type.banner
+  module:
+    - field_group
+    - text
+    - video
+third_party_settings:
+  field_group:
+    group_wrapper:
+      children:
+        - field_banner_text
+      parent_name: group_container
+      weight: 4
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: banner-content
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: wrapper
+    group_container:
+      children:
+        - field_banner
+        - group_wrapper
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: banner-video
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: container
+id: paragraph.banner.default
+targetEntityType: paragraph
+bundle: banner
+mode: default
+content:
+  field_banner:
+    weight: 3
+    label: hidden
+    settings:
+      width: '854'
+      height: '480'
+      autoplay: true
+      loop: true
+      muted: true
+      preload: none
+      controls: false
+    third_party_settings: {  }
+    type: video_player
+    region: content
+  field_banner_text:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

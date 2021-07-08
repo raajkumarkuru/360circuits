@@ -1,0 +1,21 @@
+uuid: db48577f-ec54-45ac-a600-388c5a49cfbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_desc
+    - paragraphs.paragraphs_type.do
+  module:
+    - text
+id: paragraph.do.field_desc
+field_name: field_desc
+entity_type: paragraph
+bundle: do
+label: Desc
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

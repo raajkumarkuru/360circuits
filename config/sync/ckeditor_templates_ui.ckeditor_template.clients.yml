@@ -1,0 +1,12 @@
+uuid: 56b275be-b48b-4eef-a137-0dd5d44e4cc9
+langcode: en
+status: true
+dependencies: {  }
+id: clients
+label: Clients
+description: ''
+html:
+  value: "<p><strong><em><img alt=\"logo\" data-entity-type=\"file\" data-entity-uuid=\"cfde9a64-e064-4e1c-87f3-bc582e355b25\" src=\"/sites/default/files/inline-images/logo_360.png\" /></em></strong>Client</p>\r\n"
+  format: full_html
+image: ''
+weight: 1

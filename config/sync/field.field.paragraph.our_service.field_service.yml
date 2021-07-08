@@ -1,0 +1,64 @@
+uuid: 429970a4-c50f-4e81-8d73-c5985e099859
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_service
+    - paragraphs.paragraphs_type.our_service
+    - paragraphs.paragraphs_type.service
+  module:
+    - entity_reference_revisions
+id: paragraph.our_service.field_service
+field_name: field_service
+entity_type: paragraph
+bundle: our_service
+label: Service
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      service: service
+    target_bundles_drag_drop:
+      about_us:
+        weight: 13
+        enabled: false
+      banner:
+        weight: 14
+        enabled: false
+      client_says:
+        weight: 16
+        enabled: false
+      clients:
+        weight: 15
+        enabled: false
+      our_service:
+        weight: 17
+        enabled: false
+      our_works:
+        weight: 18
+        enabled: false
+      service:
+        enabled: true
+        weight: 19
+      tabs_horizontal:
+        weight: 20
+        enabled: false
+      tabs_vertical:
+        weight: 21
+        enabled: false
+      testimonial:
+        weight: 22
+        enabled: false
+      we_do:
+        weight: 23
+        enabled: false
+      why_us:
+        weight: 24
+        enabled: false
+field_type: entity_reference_revisions

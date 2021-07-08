@@ -1,0 +1,29 @@
+uuid: aed2e44f-f243-41c0-9513-7e4bfc95f569
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d879d5c2-bbcd-4e19-8f73-94f08efae7d4'
+  module:
+    - block_classes
+    - block_content
+  theme:
+    - circuit_theme
+third_party_settings:
+  block_classes:
+    block_class: copyright
+id: copyright
+theme: circuit_theme
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:d879d5c2-bbcd-4e19-8f73-94f08efae7d4'
+settings:
+  id: 'block_content:d879d5c2-bbcd-4e19-8f73-94f08efae7d4'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

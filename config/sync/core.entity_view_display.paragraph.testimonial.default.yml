@@ -1,0 +1,40 @@
+uuid: b2cdd64a-0c23-4e61-80c1-6341792420dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.testimonial.field_company_name
+    - field.field.paragraph.testimonial.field_name
+    - field.field.paragraph.testimonial.field_says
+    - paragraphs.paragraphs_type.testimonial
+  module:
+    - text
+id: paragraph.testimonial.default
+targetEntityType: paragraph
+bundle: testimonial
+mode: default
+content:
+  field_company_name:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_name:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_says:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

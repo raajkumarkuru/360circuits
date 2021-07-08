@@ -1,0 +1,55 @@
+uuid: 17eba5d2-3235-42bf-919e-23f151de5dfe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_testimonials
+    - paragraphs.paragraphs_type.client_says
+    - paragraphs.paragraphs_type.testimonial
+  module:
+    - entity_reference_revisions
+id: paragraph.client_says.field_testimonials
+field_name: field_testimonials
+entity_type: paragraph
+bundle: client_says
+label: testimonials
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      testimonial: testimonial
+    target_bundles_drag_drop:
+      about_us:
+        weight: 10
+        enabled: false
+      banner:
+        weight: 11
+        enabled: false
+      client_says:
+        weight: 13
+        enabled: false
+      clients:
+        weight: 12
+        enabled: false
+      our_service:
+        weight: 14
+        enabled: false
+      our_works:
+        weight: 15
+        enabled: false
+      testimonial:
+        enabled: true
+        weight: 16
+      we_do:
+        weight: 17
+        enabled: false
+      why_us:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions

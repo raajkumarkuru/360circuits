@@ -13,7 +13,7 @@
  * @ingroup themeable
  */
 #}
-<video muted loop  playsinline style="width:100%;height:auto;" }}>
+<video muted loop  playsinline style="width:100%;height:auto;" {{ player_attributes.autoplay ? 'autoplay' : '' }}>
   {% for user in items %}
     <source src="{{ user }}"/>
   {% endfor %}

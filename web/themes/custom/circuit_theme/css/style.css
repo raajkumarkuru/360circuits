@@ -11536,4 +11536,28 @@ header.header .menu-drawer ul a:hover {
   cursor: pointer;
 }
 
+.banner-video {
+  height: calc(100vh + 50px);
+  background-color: #000;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-video .banner-content {
+  position: absolute;
+  color: #fff;
+  top: calc(100% - 300px);
+  right: 150px;
+  max-width: 320px;
+  text-align: right;
+}
+
+.banner-video .banner-content h3, .banner-video .banner-content .h3 {
+  text-transform: uppercase;
+}
+
+.banner-video .banner-content p {
+  text-transform: capitalize;
+}
+
 /*# sourceMappingURL=style.css.map */

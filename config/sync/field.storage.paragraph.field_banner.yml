@@ -1,0 +1,27 @@
+uuid: b4fa24e7-3906-4884-b568-6578e5e70ec0
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - paragraphs
+    - video
+id: paragraph.field_banner
+field_name: field_banner
+entity_type: paragraph
+type: video
+settings:
+  default_video:
+    uuid: null
+    data: null
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: video
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

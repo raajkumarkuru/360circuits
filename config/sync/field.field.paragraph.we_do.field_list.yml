@@ -1,0 +1,67 @@
+uuid: b859f661-75aa-44ba-81fa-58228917dc82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_list
+    - paragraphs.paragraphs_type.do
+    - paragraphs.paragraphs_type.we_do
+  module:
+    - entity_reference_revisions
+id: paragraph.we_do.field_list
+field_name: field_list
+entity_type: paragraph
+bundle: we_do
+label: List
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      do: do
+    target_bundles_drag_drop:
+      about_us:
+        weight: 14
+        enabled: false
+      banner:
+        weight: 15
+        enabled: false
+      client_says:
+        weight: 17
+        enabled: false
+      clients:
+        weight: 16
+        enabled: false
+      do:
+        enabled: true
+        weight: 18
+      our_service:
+        weight: 19
+        enabled: false
+      our_works:
+        weight: 20
+        enabled: false
+      service:
+        weight: 21
+        enabled: false
+      tabs_horizontal:
+        weight: 22
+        enabled: false
+      tabs_vertical:
+        weight: 23
+        enabled: false
+      testimonial:
+        weight: 24
+        enabled: false
+      we_do:
+        weight: 25
+        enabled: false
+      why_us:
+        weight: 26
+        enabled: false
+field_type: entity_reference_revisions

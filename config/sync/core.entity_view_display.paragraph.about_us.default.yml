@@ -1,0 +1,114 @@
+uuid: 9fdc4d04-9e67-4cda-8089-f8a55b4c62a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_us.field_desc
+    - field.field.paragraph.about_us.field_vid
+    - paragraphs.paragraphs_type.about_us
+  module:
+    - field_group
+    - text
+    - video
+third_party_settings:
+  field_group:
+    group_wrapper:
+      children:
+        - group_about_container
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'col-8 offset-2 py-4'
+      label: wrapper
+    group_abount_desc:
+      children:
+        - field_desc
+      parent_name: group_about_container
+      weight: 21
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: col-5
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: abount_desc
+    group_about_video:
+      children:
+        - field_vid
+      parent_name: group_about_container
+      weight: 22
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: col-7
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: about_video
+    group_about_container:
+      children:
+        - group_abount_desc
+        - group_about_video
+      parent_name: group_wrapper
+      weight: 20
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: row
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: about_container
+id: paragraph.about_us.default
+targetEntityType: paragraph
+bundle: about_us
+mode: default
+content:
+  field_desc:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_vid:
+    weight: 4
+    label: hidden
+    settings:
+      width: '854'
+      height: '480'
+      autoplay: true
+      loop: true
+      muted: true
+      preload: none
+      controls: false
+    third_party_settings: {  }
+    type: video_player
+    region: content
+hidden: {  }

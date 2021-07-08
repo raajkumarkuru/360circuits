@@ -1,0 +1,10 @@
+uuid: 6c88bd5c-358f-4445-889b-263ba2373dc1
+langcode: en
+status: true
+dependencies: {  }
+id: we_do
+label: 'We Do'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

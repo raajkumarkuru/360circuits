@@ -1,0 +1,35 @@
+uuid: 9ed85f45-5f75-488c-b03d-cf403916a99b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.client_says.field_image
+    - field.field.paragraph.client_says.field_testimonials
+    - paragraphs.paragraphs_type.client_says
+  module:
+    - entity_reference_revisions
+    - image
+id: paragraph.client_says.default
+targetEntityType: paragraph
+bundle: client_says
+mode: default
+content:
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_testimonials:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

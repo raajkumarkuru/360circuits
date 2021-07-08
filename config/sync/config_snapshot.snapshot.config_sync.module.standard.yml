@@ -731,6 +731,420 @@ items:
         default_config_hash: I0Pa0aQvT_jawlPo9oz4FE3h_ickc55dYKTPl6gILes
   -
     collection: ''
+    name: core.entity_form_display.media.audio.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.media.audio.field_media_audio_file
+          - media.type.audio
+        module:
+          - file
+          - path
+      id: media.audio.default
+      targetEntityType: media
+      bundle: audio
+      mode: default
+      content:
+        created:
+          type: datetime_timestamp
+          weight: 10
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+        field_media_audio_file:
+          weight: 0
+          settings:
+            progress_indicator: throbber
+          third_party_settings: {  }
+          type: file_generic
+          region: content
+        path:
+          type: path
+          weight: 30
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+        status:
+          type: boolean_checkbox
+          settings:
+            display_label: true
+          weight: 100
+          region: content
+          third_party_settings: {  }
+        uid:
+          type: entity_reference_autocomplete
+          weight: 5
+          settings:
+            match_operator: CONTAINS
+            match_limit: 10
+            size: 60
+            placeholder: ''
+          region: content
+          third_party_settings: {  }
+      hidden:
+        name: true
+      _core:
+        default_config_hash: HGa6EpWJApUec2IS8zsOnJ3NhIhwY2QYNmLY7eS5zLM
+  -
+    collection: ''
+    name: core.entity_form_display.media.audio.media_library
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_form_mode.media.media_library
+          - field.field.media.audio.field_media_audio_file
+          - media.type.audio
+      id: media.audio.media_library
+      targetEntityType: media
+      bundle: audio
+      mode: media_library
+      content: {  }
+      hidden:
+        created: true
+        field_media_audio_file: true
+        name: true
+        path: true
+        status: true
+        uid: true
+      _core:
+        default_config_hash: 28vwMIYtvyjPcD4RyciZXIztxtZgmuWRCNgYemr_SZE
+  -
+    collection: ''
+    name: core.entity_form_display.media.document.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.media.document.field_media_document
+          - media.type.document
+        module:
+          - file
+      id: media.document.default
+      targetEntityType: media
+      bundle: document
+      mode: default
+      content:
+        created:
+          type: datetime_timestamp
+          weight: 10
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+        field_media_document:
+          settings:
+            progress_indicator: throbber
+          third_party_settings: {  }
+          type: file_generic
+          weight: 0
+          region: content
+        status:
+          type: boolean_checkbox
+          settings:
+            display_label: true
+          weight: 100
+          region: content
+          third_party_settings: {  }
+        uid:
+          type: entity_reference_autocomplete
+          weight: 5
+          settings:
+            match_operator: CONTAINS
+            match_limit: 10
+            size: 60
+            placeholder: ''
+          region: content
+          third_party_settings: {  }
+      hidden:
+        name: true
+      _core:
+        default_config_hash: gtZlAQdQqZgVWvvZ6v-hfmACkfEimqn_GPDbQZqNAbw
+  -
+    collection: ''
+    name: core.entity_form_display.media.document.media_library
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_form_mode.media.media_library
+          - field.field.media.document.field_media_document
+          - media.type.document
+      id: media.document.media_library
+      targetEntityType: media
+      bundle: document
+      mode: media_library
+      content: {  }
+      hidden:
+        created: true
+        field_media_document: true
+        name: true
+        path: true
+        status: true
+        uid: true
+      _core:
+        default_config_hash: dcpfpqyLXOSGpulacMAJW3H-G34_LeNsjdfxd1_oCfY
+  -
+    collection: ''
+    name: core.entity_form_display.media.image.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.media.image.field_media_image
+          - image.style.thumbnail
+          - media.type.image
+        module:
+          - image
+      id: media.image.default
+      targetEntityType: media
+      bundle: image
+      mode: default
+      content:
+        created:
+          type: datetime_timestamp
+          weight: 10
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+        field_media_image:
+          settings:
+            progress_indicator: throbber
+            preview_image_style: thumbnail
+          third_party_settings: {  }
+          type: image_image
+          weight: 0
+          region: content
+        status:
+          type: boolean_checkbox
+          settings:
+            display_label: true
+          weight: 100
+          region: content
+          third_party_settings: {  }
+        uid:
+          type: entity_reference_autocomplete
+          weight: 5
+          settings:
+            match_operator: CONTAINS
+            match_limit: 10
+            size: 60
+            placeholder: ''
+          region: content
+          third_party_settings: {  }
+      hidden:
+        name: true
+      _core:
+        default_config_hash: WeM0d1VqhuyGELo4SRiDJfhDQSLqfKavISEbrnlcTaE
+  -
+    collection: ''
+    name: core.entity_form_display.media.image.media_library
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_form_mode.media.media_library
+          - field.field.media.image.field_media_image
+          - image.style.thumbnail
+          - media.type.image
+        module:
+          - image
+      id: media.image.media_library
+      targetEntityType: media
+      bundle: image
+      mode: media_library
+      content:
+        field_media_image:
+          type: image_image
+          weight: 1
+          region: content
+          settings:
+            progress_indicator: throbber
+            preview_image_style: thumbnail
+          third_party_settings: {  }
+      hidden:
+        created: true
+        name: true
+        path: true
+        status: true
+        uid: true
+      _core:
+        default_config_hash: BMLrK4zKp8-FFnMseBdT_6h6YipUsKRfbDf_3WUB5HA
+  -
+    collection: ''
+    name: core.entity_form_display.media.remote_video.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.media.remote_video.field_media_oembed_video
+          - media.type.remote_video
+        module:
+          - media
+          - path
+      id: media.remote_video.default
+      targetEntityType: media
+      bundle: remote_video
+      mode: default
+      content:
+        created:
+          type: datetime_timestamp
+          weight: 10
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+        field_media_oembed_video:
+          type: oembed_textfield
+          weight: 0
+          settings:
+            size: 60
+            placeholder: ''
+          third_party_settings: {  }
+          region: content
+        path:
+          type: path
+          weight: 30
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+        status:
+          type: boolean_checkbox
+          settings:
+            display_label: true
+          weight: 100
+          region: content
+          third_party_settings: {  }
+        uid:
+          type: entity_reference_autocomplete
+          weight: 5
+          settings:
+            match_operator: CONTAINS
+            match_limit: 10
+            size: 60
+            placeholder: ''
+          region: content
+          third_party_settings: {  }
+      hidden:
+        name: true
+      _core:
+        default_config_hash: DfbjvjtGEMGLvm-1Zm7-MCRZj3wpGokUWZOuaK5-1Po
+  -
+    collection: ''
+    name: core.entity_form_display.media.remote_video.media_library
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_form_mode.media.media_library
+          - field.field.media.remote_video.field_media_oembed_video
+          - media.type.remote_video
+      id: media.remote_video.media_library
+      targetEntityType: media
+      bundle: remote_video
+      mode: media_library
+      content: {  }
+      hidden:
+        created: true
+        field_media_oembed_video: true
+        name: true
+        path: true
+        status: true
+        uid: true
+      _core:
+        default_config_hash: TBgPW-uaXRaICBwLaVc16rXpRiLSknDIdF9q0XL7qso
+  -
+    collection: ''
+    name: core.entity_form_display.media.video.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.media.video.field_media_video_file
+          - media.type.video
+        module:
+          - file
+          - path
+      id: media.video.default
+      targetEntityType: media
+      bundle: video
+      mode: default
+      content:
+        created:
+          type: datetime_timestamp
+          weight: 10
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+        field_media_video_file:
+          weight: 0
+          settings:
+            progress_indicator: throbber
+          third_party_settings: {  }
+          type: file_generic
+          region: content
+        path:
+          type: path
+          weight: 30
+          region: content
+          settings: {  }
+          third_party_settings: {  }
+        status:
+          type: boolean_checkbox
+          settings:
+            display_label: true
+          weight: 100
+          region: content
+          third_party_settings: {  }
+        uid:
+          type: entity_reference_autocomplete
+          weight: 5
+          settings:
+            match_operator: CONTAINS
+            match_limit: 10
+            size: 60
+            placeholder: ''
+          region: content
+          third_party_settings: {  }
+      hidden:
+        name: true
+      _core:
+        default_config_hash: QcsaoQN46kJyeffkXCqa7aX7pPtpqJjITEqeBse33D0
+  -
+    collection: ''
+    name: core.entity_form_display.media.video.media_library
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_form_mode.media.media_library
+          - field.field.media.video.field_media_video_file
+          - media.type.video
+      id: media.video.media_library
+      targetEntityType: media
+      bundle: video
+      mode: media_library
+      content: {  }
+      hidden:
+        created: true
+        field_media_video_file: true
+        name: true
+        path: true
+        status: true
+        uid: true
+      _core:
+        default_config_hash: kGv8YsopqHvzTzb7QTINWcv0fnNa5ZDQyZxpOQR2vro
+  -
+    collection: ''
     name: core.entity_form_display.node.article.default
     data:
       langcode: en
@@ -1021,6 +1435,352 @@ items:
       hidden: {  }
       _core:
         default_config_hash: 77Ye1kR-P6AaiGfEO8mnXNSr7nqtnP3PiiVBwJeGGMI
+  -
+    collection: ''
+    name: core.entity_view_display.media.audio.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.media.audio.field_media_audio_file
+          - media.type.audio
+        module:
+          - file
+      id: media.audio.default
+      targetEntityType: media
+      bundle: audio
+      mode: default
+      content:
+        field_media_audio_file:
+          type: file_audio
+          weight: 0
+          label: visually_hidden
+          settings:
+            controls: true
+            autoplay: false
+            loop: false
+            multiple_file_display_type: tags
+          third_party_settings: {  }
+          region: content
+      hidden:
+        created: true
+        name: true
+        thumbnail: true
+        uid: true
+      _core:
+        default_config_hash: SWf3MLdbEKvlx4Vs6iPwDHu5pr1aKT0SJmgp8no73-k
+  -
+    collection: ''
+    name: core.entity_view_display.media.audio.media_library
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.media.media_library
+          - field.field.media.audio.field_media_audio_file
+          - image.style.thumbnail
+          - media.type.audio
+        module:
+          - image
+      id: media.audio.media_library
+      targetEntityType: media
+      bundle: audio
+      mode: media_library
+      content:
+        thumbnail:
+          type: image
+          weight: 0
+          region: content
+          label: hidden
+          settings:
+            image_style: thumbnail
+            image_link: ''
+          third_party_settings: {  }
+      hidden:
+        created: true
+        field_media_audio_file: true
+        name: true
+        uid: true
+      _core:
+        default_config_hash: bluLijrv0ELGIq1uFR777kImy6ZH6VLl8mBCOwvuLg4
+  -
+    collection: ''
+    name: core.entity_view_display.media.document.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.media.document.field_media_document
+          - media.type.document
+        module:
+          - file
+      id: media.document.default
+      targetEntityType: media
+      bundle: document
+      mode: default
+      content:
+        field_media_document:
+          label: visually_hidden
+          settings: {  }
+          third_party_settings: {  }
+          type: file_default
+          weight: 1
+          region: content
+      hidden:
+        created: true
+        thumbnail: true
+        uid: true
+        name: true
+      _core:
+        default_config_hash: DXitcriWmE5QHvGvk2OzWouaSnXD5uipkRdAG6_pnkg
+  -
+    collection: ''
+    name: core.entity_view_display.media.document.media_library
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.media.media_library
+          - field.field.media.document.field_media_document
+          - image.style.thumbnail
+          - media.type.document
+        module:
+          - image
+      id: media.document.media_library
+      targetEntityType: media
+      bundle: document
+      mode: media_library
+      content:
+        thumbnail:
+          type: image
+          weight: 0
+          region: content
+          label: hidden
+          settings:
+            image_style: thumbnail
+            image_link: ''
+          third_party_settings: {  }
+      hidden:
+        created: true
+        field_media_document: true
+        name: true
+        uid: true
+      _core:
+        default_config_hash: WA5PBCSll9OeXbS16GbGz8jNgz7vkUAmC_72nn0yyBo
+  -
+    collection: ''
+    name: core.entity_view_display.media.image.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.media.image.field_media_image
+          - image.style.large
+          - media.type.image
+        module:
+          - image
+      id: media.image.default
+      targetEntityType: media
+      bundle: image
+      mode: default
+      content:
+        field_media_image:
+          label: visually_hidden
+          settings:
+            image_style: large
+            image_link: ''
+          third_party_settings: {  }
+          type: image
+          weight: 1
+          region: content
+      hidden:
+        created: true
+        thumbnail: true
+        uid: true
+        name: true
+      _core:
+        default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
+  -
+    collection: ''
+    name: core.entity_view_display.media.image.media_library
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.media.media_library
+          - field.field.media.image.field_media_image
+          - image.style.medium
+          - media.type.image
+        module:
+          - image
+      id: media.image.media_library
+      targetEntityType: media
+      bundle: image
+      mode: media_library
+      content:
+        thumbnail:
+          type: image
+          weight: 0
+          region: content
+          label: hidden
+          settings:
+            image_style: medium
+            image_link: ''
+          third_party_settings: {  }
+      hidden:
+        created: true
+        field_media_image: true
+        name: true
+        uid: true
+      _core:
+        default_config_hash: PaGXvzRcL9eII--JV4eCVfObjrNo0l-u1dB_WJtB9ig
+  -
+    collection: ''
+    name: core.entity_view_display.media.remote_video.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.media.remote_video.field_media_oembed_video
+          - media.type.remote_video
+        module:
+          - media
+      id: media.remote_video.default
+      targetEntityType: media
+      bundle: remote_video
+      mode: default
+      content:
+        field_media_oembed_video:
+          type: oembed
+          weight: 0
+          label: hidden
+          settings:
+            max_width: 0
+            max_height: 0
+          third_party_settings: {  }
+          region: content
+      hidden:
+        created: true
+        name: true
+        thumbnail: true
+        uid: true
+      _core:
+        default_config_hash: gUaDZKMQD3lmLKWPn727X3JHVdKJ525g4EJCCcDVAqk
+  -
+    collection: ''
+    name: core.entity_view_display.media.remote_video.media_library
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.media.media_library
+          - field.field.media.remote_video.field_media_oembed_video
+          - image.style.medium
+          - media.type.remote_video
+        module:
+          - image
+      id: media.remote_video.media_library
+      targetEntityType: media
+      bundle: remote_video
+      mode: media_library
+      content:
+        thumbnail:
+          type: image
+          weight: 0
+          region: content
+          label: hidden
+          settings:
+            image_style: medium
+            image_link: ''
+          third_party_settings: {  }
+      hidden:
+        created: true
+        field_media_oembed_video: true
+        name: true
+        uid: true
+      _core:
+        default_config_hash: sLyo3lc_eX4-C1Jv0ivqjuORGfdclLsX09tZf7K3EVM
+  -
+    collection: ''
+    name: core.entity_view_display.media.video.default
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.field.media.video.field_media_video_file
+          - media.type.video
+        module:
+          - file
+      id: media.video.default
+      targetEntityType: media
+      bundle: video
+      mode: default
+      content:
+        field_media_video_file:
+          type: file_video
+          weight: 0
+          label: visually_hidden
+          settings:
+            muted: false
+            width: 640
+            height: 480
+            controls: true
+            autoplay: false
+            loop: false
+            multiple_file_display_type: tags
+          third_party_settings: {  }
+          region: content
+      hidden:
+        created: true
+        name: true
+        thumbnail: true
+        uid: true
+      _core:
+        default_config_hash: dQR0mYK5NNg27OigHrxZrHSsnwewnNZcPJKjKIO0cpA
+  -
+    collection: ''
+    name: core.entity_view_display.media.video.media_library
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - core.entity_view_mode.media.media_library
+          - field.field.media.video.field_media_video_file
+          - image.style.thumbnail
+          - media.type.video
+        module:
+          - image
+      id: media.video.media_library
+      targetEntityType: media
+      bundle: video
+      mode: media_library
+      content:
+        thumbnail:
+          type: image
+          weight: 0
+          region: content
+          label: hidden
+          settings:
+            image_style: thumbnail
+            image_link: ''
+          third_party_settings: {  }
+      hidden:
+        created: true
+        field_media_video_file: true
+        name: true
+        uid: true
+      _core:
+        default_config_hash: PDQo9eqAz3D8g87S89zPgXsm7Xy-dYMdEgwKBahFdy0
   -
     collection: ''
     name: core.entity_view_display.node.article.default
@@ -1498,6 +2258,175 @@ items:
         default_config_hash: TmAKjNrJ7RR60YpqvJq_QqEewYe_S8Kd23n8VRCqiWs
   -
     collection: ''
+    name: field.field.media.audio.field_media_audio_file
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.storage.media.field_media_audio_file
+          - media.type.audio
+        module:
+          - file
+      id: media.audio.field_media_audio_file
+      field_name: field_media_audio_file
+      entity_type: media
+      bundle: audio
+      label: 'Audio file'
+      description: ''
+      required: true
+      translatable: true
+      default_value: {  }
+      default_value_callback: ''
+      settings:
+        file_extensions: 'mp3 wav aac'
+        file_directory: '[date:custom:Y]-[date:custom:m]'
+        max_filesize: ''
+        description_field: false
+        handler: 'default:file'
+        handler_settings: {  }
+      field_type: file
+      _core:
+        default_config_hash: sI-7KvS4Qbg6EucALXjwYEotxgxUfH-bMC19yTpZ1kw
+  -
+    collection: ''
+    name: field.field.media.document.field_media_document
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.storage.media.field_media_document
+          - media.type.document
+        enforced:
+          module:
+            - media
+        module:
+          - file
+      id: media.document.field_media_document
+      field_name: field_media_document
+      entity_type: media
+      bundle: document
+      label: Document
+      description: ''
+      required: true
+      translatable: true
+      default_value: {  }
+      default_value_callback: ''
+      settings:
+        file_directory: '[date:custom:Y]-[date:custom:m]'
+        file_extensions: 'txt rtf doc docx ppt pptx xls xlsx pdf odf odg odp ods odt fodt fods fodp fodg key numbers pages'
+        max_filesize: ''
+        handler: 'default:file'
+        handler_settings: {  }
+        description_field: false
+      field_type: file
+      _core:
+        default_config_hash: 52m0CtJVAoE3Qvh2AiciSkV8odAgQeRo4yNDGgUA7dc
+  -
+    collection: ''
+    name: field.field.media.image.field_media_image
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.storage.media.field_media_image
+          - media.type.image
+        enforced:
+          module:
+            - media
+        module:
+          - image
+      id: media.image.field_media_image
+      field_name: field_media_image
+      entity_type: media
+      bundle: image
+      label: Image
+      description: ''
+      required: true
+      translatable: true
+      default_value: {  }
+      default_value_callback: ''
+      settings:
+        alt_field: true
+        alt_field_required: true
+        title_field: false
+        title_field_required: false
+        max_resolution: ''
+        min_resolution: ''
+        default_image:
+          uuid: null
+          alt: ''
+          title: ''
+          width: null
+          height: null
+        file_directory: '[date:custom:Y]-[date:custom:m]'
+        file_extensions: 'png gif jpg jpeg'
+        max_filesize: ''
+        handler: 'default:file'
+        handler_settings: {  }
+      field_type: image
+      _core:
+        default_config_hash: pzPA-2JwyxlJ3qMb4L9viAnhNhbEhl2couH8A3FO020
+  -
+    collection: ''
+    name: field.field.media.remote_video.field_media_oembed_video
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.storage.media.field_media_oembed_video
+          - media.type.remote_video
+      id: media.remote_video.field_media_oembed_video
+      field_name: field_media_oembed_video
+      entity_type: media
+      bundle: remote_video
+      label: 'Video URL'
+      description: ''
+      required: true
+      translatable: true
+      default_value: {  }
+      default_value_callback: ''
+      settings: {  }
+      field_type: string
+      _core:
+        default_config_hash: Eo4HHenV5iZat_kEWgr_wydD3TgwURMCzwt-7qIEyoM
+  -
+    collection: ''
+    name: field.field.media.video.field_media_video_file
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - field.storage.media.field_media_video_file
+          - media.type.video
+        module:
+          - file
+      id: media.video.field_media_video_file
+      field_name: field_media_video_file
+      entity_type: media
+      bundle: video
+      label: 'Video file'
+      description: ''
+      required: true
+      translatable: true
+      default_value: {  }
+      default_value_callback: ''
+      settings:
+        file_extensions: mp4
+        file_directory: '[date:custom:Y]-[date:custom:m]'
+        max_filesize: ''
+        description_field: false
+        handler: 'default:file'
+        handler_settings: {  }
+      field_type: file
+      _core:
+        default_config_hash: OA1qtcEH8xxQhIPvf4TykZOp1MqSTA1R4HoWxbcWZD0
+  -
+    collection: ''
     name: field.field.node.article.body
     data:
       langcode: en
@@ -1708,6 +2637,157 @@ items:
       field_type: image
       _core:
         default_config_hash: Iiq0AttdhgbebJwabSFwQQ1ORn64GoGz0xSZ_eyCJ8A
+  -
+    collection: ''
+    name: field.storage.media.field_media_audio_file
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - file
+          - media
+      id: media.field_media_audio_file
+      field_name: field_media_audio_file
+      entity_type: media
+      type: file
+      settings:
+        target_type: file
+        display_field: false
+        display_default: false
+        uri_scheme: public
+      module: file
+      locked: false
+      cardinality: 1
+      translatable: true
+      indexes: {  }
+      persist_with_no_fields: false
+      custom_storage: false
+      _core:
+        default_config_hash: JCHoh95CpUeBx9ch24Tmi6ru0nwmNz8xWVH4Qs7RnTg
+  -
+    collection: ''
+    name: field.storage.media.field_media_document
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        enforced:
+          module:
+            - media
+        module:
+          - file
+          - media
+      id: media.field_media_document
+      field_name: field_media_document
+      entity_type: media
+      type: file
+      settings:
+        uri_scheme: public
+        target_type: file
+        display_field: false
+        display_default: false
+      module: file
+      locked: false
+      cardinality: 1
+      translatable: true
+      indexes: {  }
+      persist_with_no_fields: false
+      custom_storage: false
+      _core:
+        default_config_hash: rQoPQKvhehKl_xDCFHeMJ5nA5i6bxUSdrNxazOSPGTg
+  -
+    collection: ''
+    name: field.storage.media.field_media_image
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        enforced:
+          module:
+            - media
+        module:
+          - file
+          - image
+          - media
+      id: media.field_media_image
+      field_name: field_media_image
+      entity_type: media
+      type: image
+      settings:
+        default_image:
+          uuid: null
+          alt: ''
+          title: ''
+          width: null
+          height: null
+        target_type: file
+        display_field: false
+        display_default: false
+        uri_scheme: public
+      module: image
+      locked: false
+      cardinality: 1
+      translatable: true
+      indexes: {  }
+      persist_with_no_fields: false
+      custom_storage: false
+      _core:
+        default_config_hash: 7ZBrcl87ZXaw42v952wwcw_9cQgTBq5_5tgyUkE-VV0
+  -
+    collection: ''
+    name: field.storage.media.field_media_oembed_video
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - media
+      id: media.field_media_oembed_video
+      field_name: field_media_oembed_video
+      entity_type: media
+      type: string
+      settings:
+        max_length: 255
+        is_ascii: false
+        case_sensitive: false
+      module: core
+      locked: false
+      cardinality: 1
+      translatable: true
+      indexes: {  }
+      persist_with_no_fields: false
+      custom_storage: false
+      _core:
+        default_config_hash: SJgxR5XWOesQbEKqp8VgInPyJjCFU_t2pi7UzYB78xg
+  -
+    collection: ''
+    name: field.storage.media.field_media_video_file
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - file
+          - media
+      id: media.field_media_video_file
+      field_name: field_media_video_file
+      entity_type: media
+      type: file
+      settings:
+        target_type: file
+        display_field: false
+        display_default: false
+        uri_scheme: public
+      module: file
+      locked: false
+      cardinality: 1
+      translatable: true
+      indexes: {  }
+      persist_with_no_fields: false
+      custom_storage: false
+      _core:
+        default_config_hash: z5mgbn1PIVZ5TNMByBmivqo_u3Rdk58UIzpyN4ypTeM
   -
     collection: ''
     name: field.storage.node.comment
@@ -1960,6 +3040,105 @@ items:
             filter_url_length: 72
       _core:
         default_config_hash: oz6NyPDAB4HB6N9hgH2LwNVtCd-sXbMG1fbn5KsRIDI
+  -
+    collection: ''
+    name: media.type.audio
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      id: audio
+      label: Audio
+      description: 'A locally hosted audio file.'
+      source: audio_file
+      queue_thumbnail_downloads: false
+      new_revision: true
+      source_configuration:
+        source_field: field_media_audio_file
+      field_map:
+        name: name
+      _core:
+        default_config_hash: eJw8n6Tk2tO3ZysuEeGR1gZa1yRffaZzR4t0Q7iNurs
+  -
+    collection: ''
+    name: media.type.document
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      id: document
+      label: Document
+      description: 'An uploaded file or document, such as a PDF.'
+      source: file
+      queue_thumbnail_downloads: false
+      new_revision: true
+      source_configuration:
+        source_field: field_media_document
+      field_map:
+        name: name
+      _core:
+        default_config_hash: _D9q3XSnP6ik9we9UuoTvZsQKPuYNp_G9PfwVtWzgnQ
+  -
+    collection: ''
+    name: media.type.image
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      id: image
+      label: Image
+      description: 'Use local images for reusable media.'
+      source: image
+      queue_thumbnail_downloads: false
+      new_revision: true
+      source_configuration:
+        source_field: field_media_image
+      field_map:
+        name: name
+      _core:
+        default_config_hash: 6Qope5wG7HUpV0tPOBMtDI_GZkHFcF1Xj4hgD9Cu_hM
+  -
+    collection: ''
+    name: media.type.remote_video
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      id: remote_video
+      label: 'Remote video'
+      description: 'A remotely hosted video from YouTube or Vimeo.'
+      source: 'oembed:video'
+      queue_thumbnail_downloads: false
+      new_revision: true
+      source_configuration:
+        thumbnails_directory: 'public://oembed_thumbnails'
+        providers:
+          - YouTube
+          - Vimeo
+        source_field: field_media_oembed_video
+      field_map:
+        title: name
+      _core:
+        default_config_hash: FvzYbqrSLeKG-eXDngFRYlGe3_f8RaSXPBf3i4jWpa0
+  -
+    collection: ''
+    name: media.type.video
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      id: video
+      label: Video
+      description: 'A locally hosted video file.'
+      source: video_file
+      queue_thumbnail_downloads: false
+      new_revision: true
+      source_configuration:
+        source_field: field_media_video_file
+      field_map:
+        name: name
+      _core:
+        default_config_hash: hzgvcRgZHltqWf8hBmttoWh95tCJoPL25lPq9YSIRsY
   -
     collection: ''
     name: node.settings

@@ -1,0 +1,29 @@
+uuid: df8d841d-5e3b-4d97-a3e4-be54f128f554
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.footer.field_image
+    - system.menu.footer
+  module:
+    - image
+id: menu_link_content.footer.default
+targetEntityType: menu_link_content
+bundle: footer
+mode: default
+content:
+  children:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

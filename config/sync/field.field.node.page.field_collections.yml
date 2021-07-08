@@ -1,0 +1,69 @@
+uuid: a35a1e2f-c563-4ec1-94a9-482741ac00ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_collections
+    - node.type.page
+    - paragraphs.paragraphs_type.about_us
+    - paragraphs.paragraphs_type.banner
+    - paragraphs.paragraphs_type.client_says
+    - paragraphs.paragraphs_type.clients
+    - paragraphs.paragraphs_type.our_service
+    - paragraphs.paragraphs_type.our_works
+    - paragraphs.paragraphs_type.we_do
+    - paragraphs.paragraphs_type.why_us
+  module:
+    - entity_reference_revisions
+id: node.page.field_collections
+field_name: field_collections
+entity_type: node
+bundle: page
+label: Collections
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      about_us: about_us
+      banner: banner
+      clients: clients
+      our_service: our_service
+      client_says: client_says
+      our_works: our_works
+      we_do: we_do
+      why_us: why_us
+    target_bundles_drag_drop:
+      about_us:
+        enabled: true
+        weight: 9
+      banner:
+        enabled: true
+        weight: 10
+      client_says:
+        enabled: true
+        weight: 13
+      clients:
+        enabled: true
+        weight: 11
+      our_service:
+        enabled: true
+        weight: 12
+      our_works:
+        enabled: true
+        weight: 13
+      testimonial:
+        weight: 14
+        enabled: false
+      we_do:
+        enabled: true
+        weight: 15
+      why_us:
+        enabled: true
+        weight: 16
+field_type: entity_reference_revisions

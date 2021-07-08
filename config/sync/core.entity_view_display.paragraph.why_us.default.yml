@@ -1,0 +1,33 @@
+uuid: c775f184-f33d-452e-b938-222e87f96a5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.why_us.field_background_image
+    - field.field.paragraph.why_us.field_desc
+    - paragraphs.paragraphs_type.why_us
+  module:
+    - image
+    - text
+id: paragraph.why_us.default
+targetEntityType: paragraph
+bundle: why_us
+mode: default
+content:
+  field_background_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_desc:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }
