@@ -99,7 +99,7 @@ function lightboxOpen(id) {
 
 function lightboxClose() {
   var el = document.querySelector('.overlay');
-  el.classList.toggle('overlay-toggle');
+  el.classList.remove('overlay-toggle');
   var play = document.getElementById("overlayVideo");
   play.pause();
 }

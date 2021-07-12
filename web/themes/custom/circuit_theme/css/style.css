@@ -11471,6 +11471,7 @@ header.header .menu-drawer ul a:hover {
 
 .close-video {
   cursor: pointer;
+  right: -24px;
 }
 
 .client-brands-container .js-marquee {
