@@ -11589,27 +11589,17 @@ h3, .h3 {
   transition-timing-function: linear !important;
 }
 
-form {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-evenly;
-}
-form .form-wrapper {
-  width: 45%;
-  flex-direction: column;
-}
-form .form-wrapper > div {
+form .form-wrapper div {
   margin: 0 0 12px;
 }
-form .form-wrapper > div input[type=text], form .form-wrapper > div input[type=email], form .form-wrapper > div textarea {
+form .form-wrapper div input[type=text], form .form-wrapper div input[type=email], form .form-wrapper div textarea {
   outline: none;
   border: none;
   padding: 4px 6px;
   margin: 0 0 10px;
   background: rgba(68, 66, 66, 0.8);
 }
-form .form-wrapper > div input[type=submit] {
+form .form-wrapper div input[type=submit] {
   border: solid 2px #307ae9;
   background: rgba(48, 122, 233, 0.4);
   background: transparent;

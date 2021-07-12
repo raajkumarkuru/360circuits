@@ -411,14 +411,10 @@ h3{
   }
 }
 form{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  
   .form-wrapper{
-    width: 45%;
-    flex-direction: column;
-    > div{
+    
+    div{
       margin: 0 0 12px;
       input[type='text'],input[type='email'],textarea{
         outline: none;
