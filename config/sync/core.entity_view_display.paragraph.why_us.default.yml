@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.why_us.field_background_image
     - field.field.paragraph.why_us.field_desc
+    - image.style.why_us
     - paragraphs.paragraphs_type.why_us
   module:
     - image
@@ -18,7 +19,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      image_style: why_us
       image_link: ''
     third_party_settings: {  }
     type: image

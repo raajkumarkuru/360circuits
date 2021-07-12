@@ -6,7 +6,7 @@ dependencies:
     - field.field.paragraph.our_works.field_video
     - paragraphs.paragraphs_type.our_works
   module:
-    - video
+    - circuit
 id: paragraph.our_works.default
 targetEntityType: paragraph
 bundle: our_works
@@ -24,6 +24,6 @@ content:
       controls: false
       autoplay: false
     third_party_settings: {  }
-    type: video_player
+    type: video_player_popup
     region: content
 hidden: {  }

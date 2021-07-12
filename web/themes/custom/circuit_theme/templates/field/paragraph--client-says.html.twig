@@ -47,12 +47,12 @@
   ]
 %}
 {% block paragraph %}
-  <div class="client-says-container p-4">
+  <div class="client-says-container col-md-12 p-4 ps-0">
     <div class="row">
     {% block content %}
-      <div class="col-md-6 offset-md-6">
-        <h2>What Our Clients Say:</h2>
-      {{ content.field_testimonials }}</div>
+      <h3 class="text-end">What Our Clients Say:</h3>
+      <div class="col-md-5">{{ content.field_image }}</div>
+      <div class="col-md-7">{{ content.field_testimonials }}</div>
       {% endblock %}
     </div>
   </div>

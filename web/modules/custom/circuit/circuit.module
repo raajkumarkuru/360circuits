@@ -1,1 +1,12 @@
 <?php
+
+/**
+ * Implements hook_theme().
+ */
+function circuit_theme() {
+  return array(
+    'video_player_popup_formatter' => array(
+      'variables' => array('items' => NULL, 'player_attributes' => NULL, 'id' => NULL)
+    ),
+  );
+}

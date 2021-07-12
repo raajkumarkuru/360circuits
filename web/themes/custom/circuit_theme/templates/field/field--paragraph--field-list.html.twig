@@ -56,11 +56,11 @@
 {% if label_hidden %}
   {% if multiple %}
     <div class="col">
-    <div{{ attributes.addClass(classes, 'row', 'g-0') }}>
+      <div class="top-services row g-0">
       {% for item in items %}
-        <div{{ item.attributes.addClass('field__item', 'col-3') }}>
+        
           {{ item.content }}
-        </div>
+        
       {% endfor %}
     </div>
     </div>

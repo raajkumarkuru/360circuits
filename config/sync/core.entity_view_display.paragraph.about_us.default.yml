@@ -14,9 +14,9 @@ third_party_settings:
   field_group:
     group_wrapper:
       children:
-        - group_about_container
+        - group_col
       parent_name: ''
-      weight: 0
+      weight: 1
       format_type: html_element
       region: content
       format_settings:
@@ -28,18 +28,16 @@ third_party_settings:
         effect: none
         speed: fast
         id: ''
-        classes: 'col-8 offset-2 py-4'
+        classes: 'container py-4'
       label: wrapper
     group_abount_desc:
       children:
         - field_desc
-      parent_name: group_about_container
-      weight: 21
+      parent_name: group_row
+      weight: 4
       format_type: html_element
       region: content
       format_settings:
-        id: ''
-        classes: col-5
         element: div
         show_label: false
         label_element: h3
@@ -47,17 +45,17 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
+        id: ''
+        classes: col-md-6
       label: abount_desc
     group_about_video:
       children:
         - field_vid
-      parent_name: group_about_container
-      weight: 22
+      parent_name: group_row
+      weight: 5
       format_type: html_element
       region: content
       format_settings:
-        id: ''
-        classes: col-7
         element: div
         show_label: false
         label_element: h3
@@ -65,13 +63,15 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
+        id: ''
+        classes: col-md-6
       label: about_video
-    group_about_container:
+    group_row:
       children:
         - group_abount_desc
         - group_about_video
-      parent_name: group_wrapper
-      weight: 20
+      parent_name: group_col
+      weight: 3
       format_type: html_element
       region: content
       format_settings:
@@ -84,7 +84,25 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: about_container
+      label: row
+    group_col:
+      children:
+        - group_row
+      parent_name: group_wrapper
+      weight: 4
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: col
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: col
 id: paragraph.about_us.default
 targetEntityType: paragraph
 bundle: about_us

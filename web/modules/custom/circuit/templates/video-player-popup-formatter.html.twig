@@ -1,0 +1,20 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a formatted video field.
+ *
+ * Available variables:
+ * - items: A collection of videos.
+ * - player_attributes: Player options including the following:
+ *   - width: The width of the video (if known).
+ *   - height: The height of the video (if known).
+ *   - autoplay: Autoplay on or off
+ *
+ * @ingroup themeable
+ */
+#}
+<video muted loop  playsinline style="width:100%;height:auto;" {{ player_attributes.autoplay ? 'autoplay' : '' }} id='video_{{ id }}' onclick="lightboxOpen('video_{{ id }}');">
+  {% for user in items %}
+    <source src="{{ user }}"/>
+  {% endfor %}
+</video>

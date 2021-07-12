@@ -1,0 +1,15 @@
+uuid: 6a430ac5-764c-4095-8036-29d302beb9ca
+langcode: en
+status: true
+dependencies: {  }
+name: why_us
+label: 'why Us'
+effects:
+  9b93ebed-f2ea-4f89-99c1-ff746161b145:
+    uuid: 9b93ebed-f2ea-4f89-99c1-ff746161b145
+    id: image_scale
+    weight: 1
+    data:
+      width: 350
+      height: null
+      upscale: false

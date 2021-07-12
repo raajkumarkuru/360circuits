@@ -13,6 +13,19 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "owlcarousel2/owlcarousel2",
+                "version": "2.3.4",
+                "type":"drupal-library",
+                "source": {
+                    "url": "https://github.com/OwlCarousel2/OwlCarousel2.git",
+                    "type": "git",
+                    "reference": "develop"
+                }
+            }
         }
     ],
     "require": {
@@ -23,35 +36,31 @@
         "drupal/backup_migrate": "^5.0",
         "drupal/block_classes": "^1.0",
         "drupal/bootstrap5": "^1.0@beta",
-        "drupal/ckeditor_templates_ui": "^1.4",
         "drupal/config_sync": "^2.0@beta",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.8.0",
         "drupal/core-composer-scaffold": "^8.8.0",
-        "drupal/devel": "^2.1",
+        "drupal/ctools": "^3.7",
         "drupal/field_group": "^3.1",
         "drupal/fontawesome": "^2.19",
-        "drupal/layout_paragraphs": "^1.0",
         "drupal/menu_item_extras": "^2.15",
         "drupal/menu_svg_icons": "^1.0",
         "drupal/owlcarousel2": "^1.0@RC",
         "drupal/paragraphs": "^1.12",
         "drupal/paragraphs_ee": "^1.7",
         "drupal/paragraphs_tabs": "^1.0",
-        "drupal/pathauto": "^1.8",
-        "drupal/slick": "^2.3",
-        "drupal/slick_paragraphs": "^2.1",
         "drupal/tablefield": "^2.2",
-        "drupal/varbase_heroslider_media": "^7.16",
         "drupal/video": "^1.4",
         "drupal/webform": "^6.0",
         "drush/drush": "^9.7.1 | ^10.0.0",
+        "owlcarousel2/owlcarousel2": "^2.3",
         "vlucas/phpdotenv": "^4.0",
         "webflo/drupal-finder": "^1.0.0",
         "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "require-dev": {
         "drupal/core-dev": "^8.8.0",
+        "drupal/devel": "^2.1",
         "drupal/kint": "^2.1"
     },
     "conflict": {

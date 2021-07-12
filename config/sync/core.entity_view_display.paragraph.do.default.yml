@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.do.field_desc
     - field.field.paragraph.do.field_do_title
     - field.field.paragraph.do.field_image
+    - image.style.we_
     - paragraphs.paragraphs_type.do
   module:
     - image
@@ -33,7 +34,7 @@ content:
     weight: 1
     label: hidden
     settings:
-      image_style: ''
+      image_style: we_
       image_link: ''
     third_party_settings: {  }
     type: image

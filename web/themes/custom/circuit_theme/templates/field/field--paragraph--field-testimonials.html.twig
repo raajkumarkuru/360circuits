@@ -55,7 +55,7 @@
 
 {% if label_hidden %}
   {% if multiple %}
-    <section class="quotes testimonial">
+    <section class="quotes testimonial owl-carousel">
     {% set last_row = items|length - 1 %}
       {% for key, item in items %}
         {% set reminder = key is divisible by(3) %}

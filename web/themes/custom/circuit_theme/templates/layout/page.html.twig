@@ -91,9 +91,9 @@ set nav_classes = 'navbar navbar-expand-lg' ~
 </main>
 
 {% include directory ~ '/templates/layout/footer.html.twig' %}
-<div class="overlay">
+<div class="overlay" onclick="lightboxClose()">
   <div class="overlay-wrapper">
-      <i class="fa fa-times-circle close-video"></i>
+      <i class="fa fa-times-circle close-video" onclick="lightboxClose()"></i>
       <video id="overlayVideo" width="100%" height="100%" controls>
           <source type="video/mp4">
       </video>

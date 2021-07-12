@@ -1,0 +1,22 @@
+uuid: f070fd7d-de6d-4ea9-981b-e10250e7f819
+langcode: en
+status: true
+dependencies: {  }
+name: we_
+label: 'We Do'
+effects:
+  bc70f92a-0d57-4b4a-911d-a841d75923be:
+    uuid: bc70f92a-0d57-4b4a-911d-a841d75923be
+    id: image_resize
+    weight: -10
+    data:
+      width: 350
+      height: 788
+  607e0b71-2357-4816-9035-c8715801e1f7:
+    uuid: 607e0b71-2357-4816-9035-c8715801e1f7
+    id: image_scale
+    weight: 3
+    data:
+      width: 350
+      height: null
+      upscale: false

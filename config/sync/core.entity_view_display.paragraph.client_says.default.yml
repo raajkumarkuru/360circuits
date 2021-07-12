@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.client_says.field_image
     - field.field.paragraph.client_says.field_testimonials
+    - image.style.why_us
     - paragraphs.paragraphs_type.client_says
   module:
     - entity_reference_revisions
@@ -18,7 +19,7 @@ content:
     weight: 1
     label: hidden
     settings:
-      image_style: ''
+      image_style: why_us
       image_link: ''
     third_party_settings: {  }
     type: image

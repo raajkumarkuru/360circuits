@@ -1,7 +1,9 @@
 global-styling:
   css:
     theme:
+      /libraries/owlcarousel2/dist/assets/owl.carousel.min.css: {}
       css/style.css: {}
   js:
+    /libraries/owlcarousel2/dist/owl.carousel.min.js: {}
     js/jquery.marquee.min.js: {}
     js/main.js: {}

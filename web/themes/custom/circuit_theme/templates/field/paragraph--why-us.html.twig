@@ -47,12 +47,14 @@
   ]
 %}
 {% block paragraph %}
-  <div class="why-us-container why-us-container p-4">
-    <div class="row">
-    {% block content %}
-      <div class="col-md-6 offset-md-6">
-      {{ content.field_desc }}</div>
-      {% endblock %}
+  <div class="why-us-container p-4">
+    <div class="container">
+      <div class="row align-items-center">
+      {% block content %}
+        <div class="col-md-6">{{ content.field_background_image }}</div>
+        <div class="col-md-6 pt-4">{{ content.field_desc }}</div>
+        {% endblock %}
+      </div>
     </div>
   </div>
 {% endblock paragraph %}

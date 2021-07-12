@@ -1,0 +1,15 @@
+uuid: e4ea2394-952e-4101-b99a-79f5e8aa154d
+langcode: en
+status: true
+dependencies: {  }
+name: service_icon
+label: 'Service Icon'
+effects:
+  f7bbf444-605a-4191-92db-339d7bd8258a:
+    uuid: f7bbf444-605a-4191-92db-339d7bd8258a
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 60
+      upscale: false

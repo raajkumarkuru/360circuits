@@ -55,13 +55,15 @@
 
 {% if label_hidden %}
   {% if multiple %}
-    <div class="we_do_container p-4">
-    <div{{ attributes.addClass(classes, 'row') }}>
+    <div class="we_do_container">
+    <div class="container">
+    <div{{ attributes.addClass(classes, 'row', 'services', 'p-4') }}>
       {% for item in items %}
-        <div{{ item.attributes.addClass('we_do_item', 'col-3', 'py-4') }}>
-          {{ item.content }}
+        <div{{ item.attributes.addClass('we_do_item', 'services-item', 'col-md-6', 'col-lg-4', 'col-xl-3') }}>
+        {{ item.content }}
         </div>
       {% endfor %}
+    </div>
     </div>
     </div>
   {% else %}
@@ -73,11 +75,11 @@
   <div{{ attributes.addClass(classes) }}>
     <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
     {% if multiple %}
-      <div class="container we_do_container p-4">
+      <div class="container we_do_container services">
       <div class="row">
     {% endif %}
     {% for item in items %}
-      <div{{ item.attributes.addClass('we_do_item', 'col-3', 'py-4') }}>{{ item.content }}</div>
+      <div{{ item.attributes.addClass('we_do_item', 'col-3') }}>{{ item.content }}</div>
     {% endfor %}
     {% if multiple %}
       </div>
